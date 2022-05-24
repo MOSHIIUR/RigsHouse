@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C364C8F6-9205-4E25-8E7C-784BB38ACC8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RigsHouse</RootNamespace>
+    <AssemblyName>Rigs</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account.Designer.cs">
+      <DependentUpon>account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUser.Designer.cs">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cbuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cbuy.Designer.cs">
+      <DependentUpon>Cbuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buyUsed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buyUsed.Designer.cs">
+      <DependentUpon>buyUsed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cart.Designer.cs">
+      <DependentUpon>cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cart00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cart00.Designer.cs">
+      <DependentUpon>cart00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connectionString.cs" />
+    <Compile Include="Cproduct.cs" />
+    <Compile Include="createAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createAccount.Designer.cs">
+      <DependentUpon>createAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuproduct.cs" />
+    <Compile Include="displayProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="displayProduct.Designer.cs">
+      <DependentUpon>displayProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="displayUsed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="displayUsed.Designer.cs">
+      <DependentUpon>displayUsed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mBuy.Designer.cs">
+      <DependentUpon>mBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageSell.Designer.cs">
+      <DependentUpon>manageSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product.Designer.cs">
+      <DependentUpon>product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sellResponse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sellResponse.Designer.cs">
+      <DependentUpon>sellResponse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageUser.Designer.cs">
+      <DependentUpon>manageUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="purchaseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchaseList.Designer.cs">
+      <DependentUpon>purchaseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passChange.Designer.cs">
+      <DependentUpon>passChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageProduct.designer.cs">
+      <DependentUpon>manageProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productDescription.Designer.cs">
+      <DependentUpon>productDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchaseInfo.Designer.cs">
+      <DependentUpon>purchaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sellProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sellProduct.Designer.cs">
+      <DependentUpon>sellProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateAccount.Designer.cs">
+      <DependentUpon>updateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="used.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="used.Designer.cs">
+      <DependentUpon>used.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs" />
+    <Compile Include="userInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userInfo.Designer.cs">
+      <DependentUpon>userInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verifyLogin.cs" />
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="account.resx">
+      <DependentUpon>account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUser.resx">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cbuy.resx">
+      <DependentUpon>Cbuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buyUsed.resx">
+      <DependentUpon>buyUsed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cart.resx">
+      <DependentUpon>cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cart00.resx">
+      <DependentUpon>cart00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createAccount.resx">
+      <DependentUpon>createAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="displayProduct.resx">
+      <DependentUpon>displayProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="displayUsed.resx">
+      <DependentUpon>displayUsed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mBuy.resx">
+      <DependentUpon>mBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageSell.resx">
+      <DependentUpon>manageSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product.resx">
+      <DependentUpon>product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sellResponse.resx">
+      <DependentUpon>sellResponse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageUser.resx">
+      <DependentUpon>manageUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchaseList.resx">
+      <DependentUpon>purchaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passChange.resx">
+      <DependentUpon>passChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageProduct.resx">
+      <DependentUpon>manageProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productDescription.resx">
+      <DependentUpon>productDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchaseInfo.resx">
+      <DependentUpon>purchaseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sellProduct.resx">
+      <DependentUpon>sellProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateAccount.resx">
+      <DependentUpon>updateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="used.resx">
+      <DependentUpon>used.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userInfo.resx">
+      <DependentUpon>userInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="classes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

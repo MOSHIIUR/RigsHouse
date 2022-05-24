@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigsHouse", "RigsHouse\RigsHouse.csproj", "{C364C8F6-9205-4E25-8E7C-784BB38ACC8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "insertion_deletation", "..\MyProject\insertion_deletation\insertion_deletation\insertion_deletation.csproj", "{526B515B-C684-4CCF-8AC2-141480C95D07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C364C8F6-9205-4E25-8E7C-784BB38ACC8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C364C8F6-9205-4E25-8E7C-784BB38ACC8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C364C8F6-9205-4E25-8E7C-784BB38ACC8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C364C8F6-9205-4E25-8E7C-784BB38ACC8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526B515B-C684-4CCF-8AC2-141480C95D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526B515B-C684-4CCF-8AC2-141480C95D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526B515B-C684-4CCF-8AC2-141480C95D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526B515B-C684-4CCF-8AC2-141480C95D07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25280712-5266-48AC-900C-E4B14D614156}
+	EndGlobalSection
+EndGlobal
